@@ -1,3 +1,9 @@
+/*
+ * Developed by: Bruno Firmino da Silva
+ * Creation date: 05/12/2010
+ * Class description: implements MIDlet functions related to the cellphone.
+ */
+
 import javax.microedition.lcdui.Display;
 import javax.microedition.lcdui.Displayable;
 import javax.microedition.midlet.MIDlet;
