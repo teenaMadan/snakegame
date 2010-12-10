@@ -1,12 +1,13 @@
+/*
+ * Developed by: Bruno Firmino da Silva
+ * Creation date: 05/12/2010
+ * Class description: this controls the main states of the game.
+ */
+
 import java.util.*;
 import javax.microedition.lcdui.Canvas;
 import javax.microedition.lcdui.Graphics;
 import java.util.Random;
-
-/**
- * Autor: Bruno Firmino da Silva. Projeto para a disciplina de Modelagem e
- * Simulação de Jogos Digitais.
- */
 
 public class StatePlaying extends Canvas implements GameState {
 	private boolean rightPressed;
@@ -25,7 +26,8 @@ public class StatePlaying extends Canvas implements GameState {
 	private int tamanho_rastro = 0;
 	boolean gameover = false;
 	int macas_comidas = 0;
-
+	
+	// Cria os Sprites das imagens do jogo.
 	Sprite maca, cobra, menu, background, gover;
 
 	// Objeto que vai manter o rastro da cobra.
@@ -40,8 +42,7 @@ public class StatePlaying extends Canvas implements GameState {
 	// Classe para criar o rastro da cobra.
 	public class Rastro extends Sprite {
 
-		// tempovida: serve para determinar o tempo de duração do rastro na
-		// tela.
+		// tempovida: serve para determinar o tempo de duração do rastro na tela.
 		// ativo: define se o rastro permanece ou deve ser "apagado" da tela.
 		public int tempovida;
 		public boolean ativo = false;
